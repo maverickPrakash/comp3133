@@ -23,3 +23,4 @@ const restaurants = new mongoose.Schema({
 })
 const restaurant = mongoose.model("restaurants", restaurants);
 module.exports = restaurant;
+
