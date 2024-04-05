@@ -1,0 +1,16 @@
+<div class="navbar">
+    <a href="/" class="logo">{{ title }}</a>
+    <div class="nav-links">
+
+      @if(login!== 'Sucessful'){
+        <a href="/login">Login</a>
+      <a href="/register">Register</a>
+      }@else{
+        <button (click)="logout()">logout</button>
+      }
+      
+    </div>
+  </div>
+
+
+<router-outlet />
